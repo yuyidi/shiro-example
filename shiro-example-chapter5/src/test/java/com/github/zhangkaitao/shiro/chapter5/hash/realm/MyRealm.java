@@ -29,7 +29,7 @@ public class MyRealm extends AuthorizingRealm {
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-
+    	System.out.println(passwordService.encryptPassword("123").toCharArray());
         return new SimpleAuthenticationInfo(
                 "wu",
                 passwordService.encryptPassword("123"),
