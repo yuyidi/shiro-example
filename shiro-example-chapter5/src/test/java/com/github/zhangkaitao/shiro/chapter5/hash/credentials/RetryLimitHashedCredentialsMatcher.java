@@ -10,6 +10,8 @@ import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 
 import javax.security.auth.login.AccountLockedException;
+
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -48,4 +50,6 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
         }
         return matches;
     }
+    
 }
+

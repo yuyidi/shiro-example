@@ -24,7 +24,6 @@ public class MyRealm1 implements Realm {
 
     @Override
     public AuthenticationInfo getAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-
         String username = (String)token.getPrincipal();  //得到用户名
         String password = new String((char[])token.getCredentials()); //得到密码
         if(!"zhang".equals(username)) {

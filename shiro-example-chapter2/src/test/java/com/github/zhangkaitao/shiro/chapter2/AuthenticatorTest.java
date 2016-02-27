@@ -1,5 +1,9 @@
 package com.github.zhangkaitao.shiro.chapter2;
 
+import java.security.Principal;
+import java.util.Iterator;
+import java.util.List;
+
 import junit.framework.Assert;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
